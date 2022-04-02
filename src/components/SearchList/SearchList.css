@@ -1,0 +1,35 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  size: 50px;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+li {
+  font-family: "Roboto";
+  font-size: 25px;
+  margin: 5px;
+  padding: 5px;
+  color: #ffffff;
+  list-style: circle;
+  list-style-type: disc;
+  font-weight: bold;
+}
+
+.default-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  color: #ffffff;
+  margin-top: 25px;
+}
