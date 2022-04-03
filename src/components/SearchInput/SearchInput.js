@@ -15,7 +15,6 @@ const SearchInput = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(asyncFetchData(search));
-    console.log();
   };
 
   return (
