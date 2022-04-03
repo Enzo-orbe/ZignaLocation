@@ -31,6 +31,7 @@ const SearchDataReducer = (state = initialState, action) => {
         ...state,
         isFetching: false,
         error: true,
+        data: null,
       };
     }
     default:
@@ -44,4 +45,4 @@ export const getDataSearchReducer = (state) => state;
 
 export const listData = (state) => getDataSearchReducer(state).data;
 export const isFetching = (state) => getDataSearchReducer(state).isFetching;
-export const error = (state) => getDataSearchReducer(state).error;
+export const isError = (state) => getDataSearchReducer(state).error;

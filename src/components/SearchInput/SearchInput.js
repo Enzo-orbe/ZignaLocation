@@ -26,6 +26,7 @@ const SearchInput = () => {
         name="search"
         placeholder="Search a Place"
         onChange={handleChange}
+        maxLength="256"
       />
       <Button
         className="button"

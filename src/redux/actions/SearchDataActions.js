@@ -28,7 +28,11 @@ export const asyncFetchData = (searchText) => {
   return (dispatch) => {
     dispatch(fetchingData());
     getDataMap(searchText)
-      .then((data) => dispatch(saveDataFetched(data)))
+      .then((data) => {
+        data?.features?.length > 0
+          ? dispatch(saveDataFetched(data))
+          : dispatch(fetchDataFailure());
+      })
       .catch((error) => dispatch(fetchDataFailure(error)));
   };
 };

@@ -11,25 +11,50 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   margin-top: 25px;
 }
 
 li {
   font-family: "Roboto";
-  font-size: 25px;
+  font-size: 20px;
   margin: 5px;
   padding: 5px;
   color: #ffffff;
   list-style: circle;
   list-style-type: disc;
   font-weight: bold;
+  transition: 1s;
+}
+
+.list {
+  opacity: 1;
+}
+
+.list:hover{
+  color: #100369;
 }
 
 .default-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-family: "Roboto";
   color: #ffffff;
   margin-top: 25px;
 }
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear.fade-appear-active {
+opacity: 1;
+transition: opacity 500ms linear;
+}
+
+h3{
+  font-weight: normal;
+}
+
